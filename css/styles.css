@@ -1,0 +1,220 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 2.2em;
+}
+
+.hero-container {
+  background-image: linear-gradient(rgba(52, 65, 61, 0.25), rgba(0, 0, 0, 0.25)), url('/assets/img/hero5.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 96vh;
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  font-size: 6em;
+  line-height: 1.1em;
+}
+
+.hero-subtitle {
+  font-size: 2em;
+}
+
+.hero-content-margin {
+  margin-top: 15vh;
+}
+
+.feature-1 {
+  background-image: url('/assets/img/seguimiento-pedido-online.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 30%;
+  min-height: 250px;
+  border-radius: 10px;
+}
+
+.feature-2 {
+  background-image: url('/assets/img/actualizar-wordpress-manualmente-automaticamente-1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: ccover;
+  min-width: 30%;
+  min-height: 250px;
+  border-radius: 10px;
+}
+
+.feature-3 {
+  background-image: url('/assets/img/barman-hablando-por-teléfono-1024x666.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: ccover;
+  min-width: 30%;
+  min-height: 250px;
+  border-radius: 10px;
+}
+
+.feature-4 {
+  background-image: url('/assets/img/descarga.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: ccover;
+  min-width: 30%;
+  min-height: 250px;
+  border-radius: 10px;
+}
+
+@media (max-width: 374px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+  .hero-subtitle {
+    font-size: 1.3em;
+  }
+  .hero-content-margin {
+    margin-top: 5vh;
+  }
+}
+@media (min-width: 375px) {
+  .hero-title {
+    font-size: 3.2em;
+  }
+  .hero-subtitle {
+    font-size: 1.5em;
+  }
+  .hero-content-margin {
+    margin-top: 7vh;
+  }
+}
+
+@media (min-width: 540px) {
+  .hero-title {
+    font-size: 4em;
+  }
+  .hero-subtitle {
+    font-size: 2em;
+  }
+  /* .hero-content-margin {
+    margin-top: 40px;
+  } */
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 5em;
+  }
+  .hero-subtitle {
+    font-size: 2.2em;
+  }
+  .hero-content-margin {
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 6em;
+  }
+  .hero-subtitle {
+    font-size: 2em;
+  }
+  .hero-content-margin {
+    margin-top: 20vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* .hero-content-margin {
+    margin-top: 120px;
+  } */
+}
+
+@media (min-width: 1400px) {
+  /* .hero-content-margin {
+    margin-top: 150px;
+  } */
+}
+
+.letter-shadow {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  height: 10vh;
+}
+
+.bg-custom-white {
+  background-color: #ededed;
+}
+
+.btn-action {
+  background-color: rgba(112, 1, 3, 0.4);
+}
+
+.btn-outline-light:hover {
+  background-color: whitesmoke;
+}
+.btn-custom-danger:hover {
+  background-color: #e72429;
+}
+
+.vh20 {
+  height: 20vh;
+}
+
+.bg-black {
+  background-color: rgb(7, 7, 7);
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.bg-footer {
+  background: rgb(52, 65, 61);
+}
+
+.link-custom {
+  text-decoration: none;
+}
+
+.link-custom:hover {
+  text-decoration: underline;
+}
+
+.slider-vh {
+  height: 96vh;
+}
+
+.border-custom {
+  border-radius: 10px;
+}
+
+.img-cashier {
+  background-image: url('/assets/img/cashier5.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 70vh;
+}
+
+.que-es-custom {
+  font-size: 4em;
+}
+
+.input-custom {
+  height: 10em;
+}

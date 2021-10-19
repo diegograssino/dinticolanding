@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/405d5358c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>díntico</title>
+  </head>
+  <body>
+    <div class="px-4 navbar-light fw-bold sticky-top bg-white shadow">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="/assets/img/logoHome.png" alt="Logo díntico" height="30rem" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header bg-custom-white">
+              <img class="ms-2" src="/assets/img/logoHome.png" alt="Logo díntico" height="30rem" />
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div id="navbarNav">
+                <ul class="navbar-nav mt-2">
+                  <li class="nav-item ms-1 mb-3">
+                    <button
+                      type="button"
+                      class="btn rounded-pill px-5 btn-sm btn-outline-light border-2 border-dark text-dark fs-5"
+                    >
+                      Ingresar
+                    </button>
+                  </li>
+                  <li class="nav-item ms-1 mb-2">
+                    <button
+                      type="button"
+                      class="btn rounded-pill px-4 btn-sm btn-outline-light border-2 border-dark px-2 text-dark fs-5"
+                    >
+                      Crear cuenta
+                    </button>
+                  </li>
+                  <hr />
+                  <li class="nav-item me-1 mt-1">
+                    <p type="button" class="pb-0 mb-0 px-2 fs-5">Contacto</p>
+                  </li>
+                  <li class="nav-item ms-1 me-3 mb-0">
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 py-1 px-2 text-dark fs-4">
+                      <i class="fab fa-facebook-square"></i>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 py-1 px-2 text-dark fs-4">
+                      <i class="fab fa-instagram"></i> <br />
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 py-1 px-2 text-dark fs-4">
+                      <i class="far fa-envelope"></i>
+                    </button>
+                  </li>
+                  <hr />
+                  <li class="nav-item me-1">
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-5">
+                      Nosotros
+                    </button>
+                  </li>
+                  <li class="nav-item me-1">
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-5">
+                      Clientes
+                    </button>
+                  </li>
+                  <li class="nav-item me-1">
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-5">
+                      Características
+                    </button>
+                  </li>
+                  <li class="nav-item me-1">
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-5">
+                      Noveades
+                    </button>
+                  </li>
+                  <li class="nav-item me-1">
+                    <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-5">
+                      FAQ
+                    </button>
+                  </li>
+                  <hr />
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item me-1">
+                <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-6">
+                  Nosotros
+                </button>
+              </li>
+              <li class="nav-item me-1">
+                <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-6">
+                  Clientes
+                </button>
+              </li>
+              <li class="nav-item me-1">
+                <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-6">
+                  Características
+                </button>
+              </li>
+              <li class="nav-item me-1">
+                <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-6">
+                  Novedades
+                </button>
+              </li>
+              <li class="nav-item me-3">
+                <button type="button" class="btn btn-sm btn-outline-light border-0 pt-2 pb-2 px-2 text-dark fs-6">
+                  FAQ
+                </button>
+              </li>
+              <li class="nav-item ms-3 me-5">
+                <button type="button" class="btn btn-sm btn-outline-light border-0 py-2 px-1 text-dark fs-6">
+                  <i class="fs-5 fab fa-facebook-square"></i>
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-light border-0 py-2 px-1 text-dark fs-6">
+                  <i class="fs-5 fab fa-instagram"></i> <br />
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-light border-0 py-2 px-1 text-dark fs-6">
+                  <i class="fs-5 far fa-envelope"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="btn rounded-pill px-3 btn-sm btn-outline-light border-2 border-dark px-2 text-dark fs-6"
+                >
+                  Ingresar
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item hero-container active">
+          <div class="hero-content text-white fw-bold">
+            <div class="container hero-content-margin">
+              <h2 class="hero-title letter-shadow fw-bold">Gestioná tu bar desde donde quieras.</h2>
+              <div class="mt-5">
+                <h2 class="hero-subtitle letter-shadow lh-base">
+                  Creá tu cuenta ahora y obtené un mes de uso completamente gratis. No te pediremos una tarjeta de
+                  crédito.
+                </h2>
+              </div>
+              <div class="mt-5">
+                <button type="button" class="btn btn-primary btn-lg px-3 fw-bold">Crear cuenta GRATIS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item hero-container">
+          <div class="hero-content text-white fw-bold">
+            <div class="container hero-content-margin">
+              <h2 class="hero-title letter-shadow fw-bold">Gestioná tu bar desde donde quieras.</h2>
+              <div class="mt-5">
+                <h2 class="hero-subtitle letter-shadow lh-base">
+                  Creá tu cuenta ahora y obtené un mes de uso completamente gratis. No te pediremos una tarjeta de
+                  crédito.
+                </h2>
+              </div>
+              <div class="mt-5">
+                <button type="button" class="btn btn-primary btn-lg px-3 fw-bold">Crear cuenta GRATIS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    <header>
+      <div class="hero-container">
+        <div class="hero-content text-white fw-bold">
+          <div class="container hero-content-margin">
+            <h2 class="hero-title letter-shadow fw-bold header-subtitle-sr">Gestioná tu bar desde donde quieras.</h2>
+            <div class="mt-5">
+              <h2 class="hero-subtitle letter-shadow lh-base header-title-sr">
+                Creá tu cuenta ahora y obtené un mes de uso completamente gratis. No te pediremos una tarjeta de
+                crédito.
+              </h2>
+            </div>
+            <div class="mt-5">
+              <button type="button" class="btn btn-primary btn-lg px-3 fw-bold header-button-sr">
+                Crear cuenta GRATIS
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <article class="bg-dark text-white py-5">
+        <div class="container">
+          <div class="card mb-3 bg-dark">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/img/caja.png" class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-6 pt-2 pt-lg-5">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold que-es-custom mb-3 mb-md-4">¿Que es díntico?</h2>
+                  <p class="card-text fs-5">
+                    Es un sistema de gestión gastronómica que te permite conocer todo lo que ocurre en tu bar desde tu
+                    celular, tablet o PC.
+                  </p>
+                  <a href="#" class="card-link fs-5 link-custom"
+                    ><span>Nos ajustamos a su negocio<i class="ms-2 fas fa-arrow-right"></i></span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container mt-5">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-6 pt-5 order-last order-md-first">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold fs-1 mb-3 mb-md-4">Seguimiento online</h2>
+                  <p class="card-text fs-5">
+                    Cada venta realizada en el sistema puede ser monitoreada en vivo en el administrador web y podrá ser
+                    monitoreada desde cualquier dispositivo.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-4 mt-5">
+                <div class="feature-1 mx-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container mt-5">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-4 mt-5"><div class="feature-2 mx-2"></div></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-6 pt-5">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold fs-1 mb-3 mb-md-4">Modificaciones instantáneas</h2>
+                  <p class="card-text fs-5">
+                    Puede agregar o actualizar productos, cambiar precios y manejar el stock desde la web.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container mt-5">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-6 pt-5 order-last order-md-first">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold fs-1 mb-3 mb-md-4">Administrá todos tus bares</h2>
+                  <p class="card-text fs-5">
+                    Con una cuenta, podes manejar todos tus bares, comparar sus ventas, gastos y evaluar el
+                    funcionamiento de cada uno de ellos.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+
+              <div class="col-md-4 mt-5"><div class="feature-3 mx-2"></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container my-5">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-4 mt-5"><div class="feature-4 mx-2"></div></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-6 pt-5">
+                <div class="card-body">
+                  <h2 class="card-title fw-bold fs-1 mb-3 mb-md-4">Informes automáticos</h2>
+                  <p class="card-text fs-5">
+                    El sistema filtra de forma automática la información por usted, resumiendo los últimos turnos,
+                    indicadores importantes y mucho más.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="bg-dark py-5 text-light">
+      <div class="container">
+        <h3 class="fs-1 fw-bold text-center">Descubre todas las funciones de díntico</h3>
+        <div class="d-grid gap-2 d-md-flex justify-content-center mt-3">
+          <a href="#" class="card-link fs-5 link-custom"
+            ><span>Nuestras características<i class="ms-2 fas fa-arrow-right"></i></span
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid img-cashier"></div>
+
+    <div class="bg-dark py-4 text-white py-5">
+      <div class="container">
+        <h3 class="fs-1 fw-bold text-center">Consigue tu presupuesto</h3>
+        <p class="fs-5 text-center">
+          Mientras tanto, crea tu cuenta GRATIS ahora mismo, no te pediremos ningún medio de pago.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-center mt-3">
+          <button type="button" class="btn btn-primary btn-lg px-3 fw-bold">Crear cuenta GRATIS</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 border-custom shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Gratis</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mes</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Caracterisca</li>
+                <li>Caracterisca</li>
+                <li>Caracterisca</li>
+                <li>Caracterisca</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Comenzar ahora</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 border-custom shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Presupuesto a medida</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">desde $xxxx<small class="text-muted fw-light">/mes</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Caracterisca</li>
+                <li>Caracterisca</li>
+                <li>Caracterisca</li>
+                <li>Caracterisca</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contactanos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="mb-5">
+      <article>
+        <div class="container mt-4">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-6 pt-5 order-last order-md-first">
+                <div class="card-body">
+                  <p class="fs-5 fst-italic text-secondary">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptas consequuntur cum est et eum
+                    officia eius suscipit optio, quibusdam voluptatibus, sunt magni ipsum explicabo dolores. Incidunt
+                    optio facilis asperiores."
+                  </p>
+                  <h6 class="card-title fw-bold mb-3 mb-md-4">John Doe, Doe Enterprises</h6>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-4 mt-4">
+                <div class="feature-1 mx-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container mt-4">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-4 mt-5"><div class="feature-2 mx-2"></div></div>
+              <div class="col-md-2"></div>
+              <div class="col-md-6 pt-5">
+                <div class="card-body">
+                  <p class="fs-5 fst-italic text-secondary">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptas consequuntur cum est et eum
+                    officia eius suscipit optio, quibusdam voluptatibus, sunt magni ipsum explicabo dolores. Incidunt
+                    optio facilis asperiores."
+                  </p>
+                  <h6 class="card-title fw-bold mb-3 mb-md-4">John Doe, Doe Enterprises</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="container mt-4">
+          <div class="card mb-3 border-0">
+            <div class="row g-0">
+              <div class="col-md-6 pt-5 order-last order-md-first">
+                <div class="card-body">
+                  <p class="fs-5 fst-italic text-secondary">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptas consequuntur cum est et eum
+                    officia eius suscipit optio, quibusdam voluptatibus, sunt magni ipsum explicabo dolores. Incidunt
+                    optio facilis asperiores."
+                  </p>
+                  <h6 class="card-title fw-bold mb-3 mb-md-4">John Doe, Doe Enterprises</h6>
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+
+              <div class="col-md-4 mt-5"><div class="feature-3 mx-2"></div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div class="bg-secondary pt-4 pb-5 text-white">
+      <div class="container">
+        <h3 class="fs-1 fw-bold text-center">Contactanos</h3>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Dirección de Email</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mail@mail.com" />
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Comentario</label>
+          <input
+            type="text"
+            class="form-control input-custom"
+            id="formGroupExampleInput2"
+            placeholder="Ingrese aquí sus comentarios para que respondamos a la brevedad."
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light">
+      <div class="container py-2">
+        <div class="row mx-5">
+          <div class="col-sm-4">
+            <h6 class="card-title fw-bold mt-4">Comenzá con díntico</h6>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">Crear cuenta</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">Nosotros</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">Clientes</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">Novedades</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">
+                  Características
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h6 class="card-title fw-bold mt-4">Soporte</h6>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">FAQ</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">Presupuesto</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-outline-secondary border-0 pt-1 px-2">Ayuda</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h6 class="card-title fw-bold mt-4">Contactanos</h6>
+            <p class="ms-2 mt-2">
+              <i class="fs-3 far fa-envelope me-1"></i>
+              <i class="fs-3 fab fa-facebook-square mx-1"></i>
+              <i class="fs-3 fab fa-instagram mx-1"></i> <br />
+              <br />
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="row mt-3"><span class="text-center fw-bold">© 2017-2021 - díntico.com</span></div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.header-title-sr', {
+        duration: 2000,
+        origin: 'rigth',
+        distance: '300px',
+      });
+      sr.reveal('.header-subtitle-sr', {
+        duration: 2000,
+        origin: 'left',
+        distance: '300px',
+      });
+      sr.reveal('.header-button-sr', {
+        duration: 2000,
+        origin: 'bottom',
+        delay: 750,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://dintico.com/ -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>díntico</title>
+
+    <!-- Bootstrap -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      type="text/javascript"
+      async=""
+      src="./díntico_files/recaptcha__es_419.js"
+      crossorigin="anonymous"
+      integrity="sha384-9nLi+cAoFZQ7h6sT7o934gxiDDhQ1ihm0WLkCNZH5QJ7MOBiFsNZPKepT9/DrDCP"
+    ></script>
+    <script async="" src="./díntico_files/analytics.js"></script>
+    <script src="./díntico_files/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="./díntico_files/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="./díntico_files/bootstrap-theme.min.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./díntico_files/bootstrap.min.js"></script>
+
+    <!-- tipografía -->
+    <link href="./díntico_files/css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./díntico_files/font-awesome.min.css" />
+    <script src="./díntico_files/api.js" async="" defer=""></script>
+
+    <script src="./díntico_files/jquery.validate.js"></script>
+    <script src="./díntico_files/jquery.validate.unobtrusive.js"></script>
+    <script src="./díntico_files/validacionGenerica.js"></script>
+
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-93908154-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        //desplazamiento por anchors.
+        $(function () {
+          $('a[href*=#]:not([href=#])').click(function () {
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+              location.hostname == this.hostname
+            ) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              if (target.length) {
+                $('html,body').animate(
+                  {
+                    scrollTop: target.offset().top,
+                  },
+                  400
+                );
+                return false;
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    <style type="text/css">
+      @media screen and (max-width: 1200px) and (min-width: 500px) {
+        .ImgCaracteristicas1 {
+          margin-top: 40px;
+        }
+
+        .ImgCaracteristicas2 {
+          position: relative;
+          vertical-align: top;
+          top: 20px;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .textoCaracteristicas1 {
+          text-align: right;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .textoCaracteristicas1 {
+          text-align: right;
+        }
+      }
+
+      /**************
+           **   FONTS   **
+           **************/
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      h2 {
+        font-weight: 400;
+      }
+
+      html,
+      body {
+        top: 0;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .header {
+        background-color: #1a1f2a;
+        background-image: url('../../Images/Home/cabecera5.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        color: white;
+        height: 600px;
+      }
+
+      .header h1 {
+        font-weight: 100;
+        padding-top: 150px;
+        font-size: 60px;
+        color: white;
+      }
+
+      .header h1 strong {
+        font-weight: 300;
+      }
+
+      @media (max-width: 767px) {
+        .header h1 {
+          font-size: 40px;
+          padding-top: 40px;
+        }
+
+        .header {
+          height: 400px;
+        }
+      }
+
+      .fixed {
+        position: fixed;
+        top: 0;
+        height: 70px;
+        z-index: 1;
+      }
+
+      .Caracteristicas {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+
+      .Caracterisiticas-Parent {
+        background-color: #f6f6f6;
+        width: 100%;
+      }
+
+      .nav li a.BarraNavegacion {
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav li a.BarraNavegacion {
+        display: inline-block;
+        padding: 21px 20px;
+      }
+
+      .nav li a.btn-default {
+        display: inline-block;
+        padding: 21px 20px;
+      }
+
+      .desplazar {
+        padding-top: 60px;
+      }
+
+      .anchor {
+        display: block;
+        position: relative;
+        width: 0;
+        height: 0;
+        z-index: -1;
+        top: -65px;
+        left: 0;
+        visibility: hidden;
+      }
+
+      /* CUSTOMIZACIÓN DE LA BARRA DE NAVEGACIÓN */
+
+      .navbar-custom {
+        background-color: rgb(61, 152, 208);
+        border-radius: 0;
+      }
+
+      .navbar-custom .navbar-nav > li > a {
+        color: #fff;
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 16px;
+      }
+
+      .nav-custom {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .navbar-custom .navbar-nav > .active > a,
+      .navbar-nav > .active > a:hover,
+      .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        background-color: transparent;
+      }
+
+      .navbar-custom .navbar-nav > li > a.BarraNavegacion:hover,
+      .nav > li > a.BarraNavegacion:focus {
+        color: #fff;
+        background-color: transparent;
+      }
+
+      a.barraLogin {
+        color: #fff;
+      }
+
+      .navbar-custom .navbar-nav > li > btn {
+        text-decoration: none;
+        background-color: #05598a;
+      }
+
+      .navbar-custom .navbar-brand {
+        height: 60px;
+        padding: 12px 15px;
+      }
+
+      .navbar-custom .navbar-toggle {
+        background-color: white;
+      }
+
+      .navbar-custom .icon-bar {
+        background-color: #343333;
+      }
+
+      .nav-custom > li > a .barraLogin {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+      }
+
+      .navbar-fixed-top-custom {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        top: 0;
+      }
+
+      .nav-custom {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .menu-links > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+      }
+
+      a.barraLogin :hover,
+      a.barraLogin :focus {
+        color: #fff;
+        background-color: rgba(43, 43, 43, 0.97);
+      }
+
+      .align-right {
+        text-align: right;
+      }
+
+      .menu-links li a:hover {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+      }
+
+      .menu-links {
+        padding-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .menu-links li {
+        display: inline-block;
+      }
+
+      .menu-links li a {
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: -4px;
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.2s ease;
+      }
+
+      .btn-success-flat {
+        background-color: #419641;
+        border-color: #419641;
+        color: #fff;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      .logo {
+        padding-top: 10px;
+      }
+
+      .divisor {
+        margin: 80px 0;
+      }
+
+      .divisorSinTop {
+        margin-top: 0px;
+        margin-bottom: 80px;
+      }
+
+      @media (max-width: 767px) {
+        .logoAlineacion {
+          text-align: center;
+          margin-bottom: 25px;
+        }
+
+        .menuAlineacion {
+          text-align: center;
+        }
+
+        .menu-links li a.btnLogin {
+          display: block;
+          color: black;
+          border-radius: 6px;
+          background-color: white;
+          margin-left: 10px;
+          border-color: white;
+          border: 1px solid transparent;
+          line-height: 24px;
+          transition: all 0.2s ease;
+        }
+
+        .menu-links li a.btn-success-flat {
+          display: block;
+          line-height: 24px;
+        }
+
+        .divisor {
+          margin: 20px 0;
+        }
+
+        .divisorSinTop {
+          margin-top: 0px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .escarapela {
+        float: right;
+        position: relative;
+        height: 90;
+        left: 10px;
+      }
+
+      #myFooter {
+        background-color: #3a3f46;
+        color: white;
+      }
+
+      #myFooter .row {
+        margin-bottom: 60px;
+      }
+
+      #myFooter .info {
+        text-align: justify;
+        color: #afb0b1;
+      }
+
+      #myFooter ul {
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 1.7;
+      }
+
+      #myFooter h5 {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+
+      #myFooter .second-bar .FooterLogo a {
+        color: white;
+        font-size: 14px;
+        float: left;
+      }
+
+      #myFooter a {
+        color: #d2d1d1;
+        text-decoration: none;
+      }
+
+      #myFooter a:hover,
+      #myFooter a:focus {
+        text-decoration: none;
+        color: white;
+      }
+
+      #myFooter .second-bar {
+        text-align: center;
+        background-color: #33373e;
+        text-align: center;
+      }
+
+      #myFooter .second-bar a {
+        font-size: 22px;
+        color: #9fa3a9;
+        padding: 10px;
+        transition: 0.2s;
+      }
+
+      #myFooter .second-bar a:hover {
+        text-decoration: none;
+      }
+
+      #myFooter .social-icons {
+        float: right;
+        margin-top: 5px;
+      }
+
+      #myFooter .facebook:hover {
+        color: #0077e2;
+      }
+
+      #myFooter .google:hover {
+        color: #ef1a1a;
+      }
+
+      #myFooter .twitter:hover {
+        color: #00aced;
+      }
+
+      /* CSS used for positioning the footers at the bottom of the page. */
+      /* You can remove this. */
+
+      .content {
+        flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        min-height: 200px;
+      }
+
+      #myFooter {
+        flex: 0 0 auto;
+        -webkit-flex: 0 0 auto;
+      }
+    </style>
+  </head>
+  <body style="font-family: &#39;Roboto&#39;, sans-serif;">
+    <div class="header" id="home">
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 logoAlineacion">
+              <a href="http://dintico.com/#home" id="logo"
+                ><img class="logo" src="./díntico_files/logodintico.png" alt="díntico"
+              /></a>
+            </div>
+            <div class="col-sm-10 align-right menuAlineacion">
+              <ul class="menu-links">
+                <li class="hidden-xs"><a href="http://dintico.com/#QueEsd%C3%ADntico" class="">¿Qué es díntico?</a></li>
+                <li class="hidden-xs"><a href="http://dintico.com/#Caracteristicas">Características </a></li>
+                <li class="hidden-xs">
+                  <a href="http://dintico.com/Home/NuestrosClientes" class="item">Nuestros Clientes</a>
+                </li>
+                <li class="hidden-xs"><a href="http://dintico.com/Home/Novedades" class="">Novedades</a></li>
+                <li class="hidden-xs"><a href="http://dintico.com/Home/FAQS" class="">FAQs</a></li>
+                <li class="hidden-xs"><a href="http://dintico.com/Cotizador/Create" class="">Precio</a></li>
+                <li>
+                  <a class="btnLogin" href="http://dintico.com/Account/Login" style="">Ingresar</a>
+                </li>
+                <li>
+                  <a class="btn-success-flat" href="http://dintico.com/#NuevasCuenta">Crear cuenta</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-sm-12">
+          <h1 style="color: white">
+            <strong>Gestioná tu bar desde tu </strong><br />
+            celular, tablet o PC.
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Que es díntico-->
+    <div class="container">
+      <span id="QueEsdíntico"></span>
+      <div class="row" id="QueEsdíntico" style="padding-top: 20px">
+        <div class="col-xs-10 col-xs-offset-1 col-md-offset-3 col-md-6">
+          <h1 style="text-align: center">¿Qué es díntico?</h1>
+          <p class="lead" style="text-align: center">
+            Es un sistema de gestión gastronómica que te permite conocer todo lo que ocurre en tu bar desde tu celular,
+            tablet o PC.
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-md-offset-3 col-md-6" style="margin-top: 20px; margin-bottom: 40px">
+          <img src="./díntico_files/opciones.png" alt="opciones de díntico" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Caracteríscias (barra de cuatro)-->
+    <div class="Caracterisiticas-Parent">
+      <span id="Caracteristicas" class="anchor"></span>
+      <div class="container">
+        <div class="row placeholders Caracteristicas text-center">
+          <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 placeholder">
+            <div style="height: 112px" class="CajaCaractrisitica">
+              <img
+                class="img-responsive center-block"
+                alt="Poderoso"
+                src="./díntico_files/icono-poderoso.png"
+                data-holder-rendered="true"
+              />
+            </div>
+            <h2>Poderoso</h2>
+            <span class="text-muted">Control de stock, ventas, empleados, métricas, alarmas y más</span>
+          </div>
+
+          <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 placeholder">
+            <div style="height: 112px" class="CajaCaractrisitica">
+              <div style="position: relative; top: 10%">
+                <img
+                  class="img-responsive center-block"
+                  alt="Fácil"
+                  src="./díntico_files/icono-facil.png"
+                  data-holder-rendered="true"
+                />
+              </div>
+            </div>
+            <h2>Fácil</h2>
+            <span class="text-muted">Es un sistema fácil de utilizar, intuitivo y sobre todo lindo! ;) </span>
+          </div>
+
+          <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 placeholder">
+            <div style="height: 112px" class="CajaCaractrisitica">
+              <img
+                src="./díntico_files/icono-conectado.png"
+                style="position: relative; top: 20%"
+                class="img-responsive center-block"
+                alt="Conectado"
+                data-holder-rendered="true"
+              />
+            </div>
+            <h2>Conectado</h2>
+            <span class="text-muted"
+              >El sistema funciona completamente sin conexión, pero podrás controlarlo remotamente si tienes una.</span
+            >
+          </div>
+
+          <div class="col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-6 col-md-3 placeholder">
+            <div style="height: 112px" class="CajaCaractrisitica">
+              <img
+                src="./díntico_files/icono-gratis.png"
+                class="img-responsive center-block"
+                style="position: relative; top: 20%"
+                alt="Gratis"
+                data-holder-rendered="true"
+              />
+            </div>
+            <h2>Gratis - 30 días</h2>
+            <span class="text-muted"
+              >Podes probar una versión completa del sistema durante 30 días de manera totalmente gratuita.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Caracteristicas texto largo y fotos-->
+    <div class="container">
+      <div class="divisor"></div>
+      <div class="row featurette">
+        <div class="col-xs-offset-1 col-md-offset-0 col-xs-10 col-md-5 col-lg-5 col-sd-3">
+          <h2 class="featurette-heading">Seguimiento online</h2>
+          <p class="lead text-justify">
+            Cada venta realizada en el sistema puede ser monitoreada en vivo en el administrador web. Mientras el bar
+            cuente con conexión a internet, cada acción realizada en el punto de venta será sincronizada y podrá ser
+            monitoreada desde cualquier dispositivo.
+          </p>
+        </div>
+
+        <div
+          class="
+            col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-6 col-lg-6
+            ImgCaracteristicas1
+          "
+        >
+          <img
+            src="./díntico_files/notebookdintico.png"
+            alt="Monitorea desde Notebook"
+            class="featurette-image img-responsive center-block"
+            data-holder-rendered="true"
+          />
+        </div>
+      </div>
+
+      <hr class="divisorSinTop" />
+
+      <div class="row featurette">
+        <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5 col-md-push-5">
+          <h2 class="featurette-heading">Modificaciones de precios instantáneas</h2>
+          <p class="lead text-justify">
+            Puede agregar o actualizar productos, cambiar precios, manejar el stock desde el la web y todos los cambios
+            realizados impactan en todos los puntos de ventas vinculados.
+          </p>
+        </div>
+        <div
+          class="
+            col-xs-offset-3
+            col-xs-6
+            col-sm-offset-3
+            col-sm-6
+            col-md-offset-1
+            col-md-5
+            col-lg-offset-1
+            col-lg-4
+            col-md-pull-7
+          "
+        >
+          <img
+            class="featurette-image img-responsive center-block"
+            src="./díntico_files/cambiosInstantaneos.png"
+            alt="Controla desde cualquier parte"
+            data-holder-rendered="true"
+          />
+        </div>
+      </div>
+
+      <hr class="divisorSinTop" />
+
+      <div class="row featurette">
+        <div class="col-xs-offset-1 col-md-offset-0 col-xs-10 col-md-5 col-lg-5 col-sd-3">
+          <h2 class="featurette-heading">Administrá todos tus bares</h2>
+          <p class="lead text-justify">
+            Con una cuenta, podes manejar todos tus bares, comparar sus ventas, gastos y evaluar el funcionamiento de
+            cada uno de ellos.
+          </p>
+        </div>
+
+        <div
+          class="col-xs-offset-3 col-xs-6 col-sm-offset-3 col-sm-6 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4"
+        >
+          <img
+            class="featurette-image img-responsive center-block"
+            src="./díntico_files/todosTusBares.png"
+            alt="Administrá todos tus bares"
+            data-holder-rendered="true"
+          />
+        </div>
+      </div>
+      <hr class="divisorSinTop" />
+
+      <div class="row featurette">
+        <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5 col-md-push-5">
+          <h2 class="featurette-heading">Informes automáticos</h2>
+          <p class="lead text-justify">
+            El sistema filtra de forma automática la información por usted, resumiendo los últimos turnos, indicadores
+            importantes y mucho más.
+          </p>
+        </div>
+        <div
+          class="
+            col-xs-offset-3
+            col-xs-6
+            col-sm-offset-3
+            col-sm-6
+            col-md-offset-1
+            col-md-5
+            col-lg-offset-1
+            col-lg-4
+            col-md-pull-7
+          "
+        >
+          <img
+            src="./díntico_files/informeDintico.png"
+            class="img-responsive center-block"
+            alt="Informes completos"
+            data-holder-rendered="true"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Conocé todas las funciones de díntico-->
+    <div style="background: #f6f6f6; padding-top: 30px; padding-bottom: 30px">
+      <div class="container">
+        <span id="PieDePagina" class="anchor"></span>
+        <div class="row text-center">
+          <div class="col-md-7">
+            <h2>Conocé todas las funciones de díntico</h2>
+          </div>
+          <div class="col-md-5" style="margin-top: 10px">
+            <a class="btn btn-success-flat btn-lg" href="http://dintico.com/Home/Caracteristicas"
+              >Ver más características</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Nueva Cuenta-->
+    <div style="background: #26b0d7">
+      <div style="padding-top: 40px">
+        <div class="container">
+          <span id="NuevasCuenta" class="anchor"></span>
+          <div class="row text-center">
+            <h2 style="color: white">Creá tu cuenta</h2>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-12">
+              <p class="lead" style="padding-top: 20px; color: white">
+                Creá tu cuenta ahora y obtené <b>un mes de uso completamente gratis.</b>
+              </p>
+              <p class="lead" style="padding-top: 5px; color: white">No te pediremos una tarjeta de crédito.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-offset-1 col-md-10"
+              style="background: #f4f5f9; border-radius: 6px; padding-top: 35px; margin-bottom: 35px"
+            >
+              <div class="col-md-offset-1 col-md-10">
+                <form
+                  action="http://dintico.com/Account/Register"
+                  class="form-horizontal"
+                  id="idFormulario"
+                  method="post"
+                  role="form"
+                  novalidate="novalidate"
+                >
+                  <hr />
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="UserName">Usuario</label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control"
+                        data-val="true"
+                        data-val-regex="El nombre de usuario tiene que ser mayor a 4 caracteres, menor que 15 caracteres y no tener espacios en blanco."
+                        data-val-regex-pattern="^[a-zA-Z0-9\\d_]{4,28}$"
+                        data-val-remote="Este nombre de usuario ya existe."
+                        data-val-remote-additionalfields="*.UserName"
+                        data-val-remote-url="/UsuariosOnline/ValidarNombreDeUsuarioParaCreacion"
+                        data-val-required="The Usuario field is required."
+                        id="UserName"
+                        name="UserName"
+                        type="text"
+                        value=""
+                      />
+                      <span
+                        class="field-validation-valid text-danger"
+                        data-valmsg-for="UserName"
+                        data-valmsg-replace="true"
+                      ></span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="Email">Email</label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control"
+                        data-val="true"
+                        data-val-regex="Email no valido."
+                        data-val-regex-pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$"
+                        data-val-required="The Email field is required."
+                        id="Email"
+                        name="Email"
+                        type="text"
+                        value=""
+                      />
+                      <span
+                        class="field-validation-valid text-danger"
+                        data-valmsg-for="Email"
+                        data-valmsg-replace="true"
+                      ></span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="Password">Contraseña</label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control"
+                        data-val="true"
+                        data-val-regex="La contraseña tiene que tener al menos una letra mayúscula, al menos una letra minúscula, al menos un número o carácter especial y ser como mínimo de 8 caracteres."
+                        data-val-regex-pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                        data-val-required="The Contraseña field is required."
+                        id="Password"
+                        name="Password"
+                        type="password"
+                      />
+                      <span
+                        class="field-validation-valid text-danger"
+                        data-valmsg-for="Password"
+                        data-valmsg-replace="true"
+                      ></span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="ConfirmPassword">Confirmar contraseña</label>
+                    <div class="col-md-9">
+                      <input
+                        class="form-control"
+                        data-val="true"
+                        data-val-equalto="La contraeña y la confirmación no coinciden."
+                        data-val-equalto-other="*.Password"
+                        id="ConfirmPassword"
+                        name="ConfirmPassword"
+                        type="password"
+                      />
+                      <span
+                        class="field-validation-valid text-danger"
+                        data-valmsg-for="ConfirmPassword"
+                        data-valmsg-replace="true"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div
+                      class="g-recaptcha col-md-offset-3 col-md-8"
+                      data-sitekey="6LfXvh8UAAAAAD8Y8QeRyVGlGHEOc9sgpQQPs7LS"
+                    >
+                      <div style="width: 304px; height: 78px">
+                        <div>
+                          <iframe
+                            title="reCAPTCHA"
+                            src="./díntico_files/anchor.html"
+                            width="304"
+                            height="78"
+                            role="presentation"
+                            name="a-3pgswja0lwgw"
+                            frameborder="0"
+                            scrolling="no"
+                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                          ></iframe>
+                        </div>
+                        <textarea
+                          id="g-recaptcha-response"
+                          name="g-recaptcha-response"
+                          class="g-recaptcha-response"
+                          style="
+                            width: 250px;
+                            height: 40px;
+                            border: 1px solid rgb(193, 193, 193);
+                            margin: 10px 25px;
+                            padding: 0px;
+                            resize: none;
+                            display: none;
+                          "
+                        ></textarea>
+                      </div>
+                      <iframe style="display: none" src="./díntico_files/saved_resource.html"></iframe>
+                    </div>
+                    <span class="text-danger col-md-offset-3 col-md-8" id="capchaptObligatorio" style="display: none"
+                      >Es obligatorio</span
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-offset-3 col-md-8">
+                      <p class="">
+                        Al hacer clic en registrar, aceptas las
+                        <a href="http://dintico.com/legal/terms" target="_blank" rel="nofollow">Condiciones</a> y
+                        confirmas que has leído nuestra
+                        <a href="http://dintico.com/about/privacy" target="_blank" rel="nofollow">Política de datos</a>,
+                        incluido el
+                        <a href="http://dintico.com/help/cookies" target="_blank" rel="nofollow">Uso de cookies</a>.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="col-md-offset-3 col-md-10" style="margin-bottom: 20px">
+                      <input type="submit" class="btn btn-success-flat btn-lg" value="Registrar" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIE-->
+
+    <footer id="myFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Comenzá con díntico</h5>
+            <ul>
+              <li><a href="http://dintico.com/#QueEsd%C3%ADntico" class="">¿Qué es díntico?</a></li>
+              <li><a href="http://dintico.com/#Caracteristicas">Características</a></li>
+              <li><a href="http://dintico.com/#NuevasCuenta">Crear cuenta</a></li>
+              <li><a href="http://dintico.com/Home/NuestrosClientes">Nuestros Clientes</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <h5>Soporte</h5>
+            <ul>
+              <li><a href="http://dintico.com/Home/FAQS">Preguntas Frecuentes </a></li>
+              <li><a href="http://dintico.com/Cotizador/Create">Consulta de precios </a></li>
+              <li><a href="http://dintico.com/#">Ayuda</a></li>
+              <li><a href="http://dintico.com/#">Skype</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 info">
+            <h5>Contactanos</h5>
+            <p>
+              Jujuy 530 P.7 Dpto.A - San Miguel de Tucumán <br />
+              (0381) 635-8514 <br />
+              <a href="mailto:contacto@dintico.com">contacto@dintico.com </a> <br />
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="second-bar">
+        <div class="container">
+          <div class="col-md-2 col-lg-2 col-sm-4 col-xs-4 FooterLogo">
+            <a href="http://dintico.com/#"> © 2017 - díntico.com </a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/dintico/" class="facebook"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://plus.google.com/105823315554676420861?hl=es" class="google"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./díntico_files/validarFormularioDeRegistro.js"></script>
+
+    <div
+      style="
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+        position: absolute;
+        transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2000000000;
+        left: 0px;
+        top: -10000px;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.05;
+        "
+      ></div>
+      <div
+        class="g-recaptcha-bubble-arrow"
+        style="
+          border: 11px solid transparent;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -11px;
+          z-index: 2000000000;
+        "
+      ></div>
+      <div
+        class="g-recaptcha-bubble-arrow"
+        style="
+          border: 10px solid transparent;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          pointer-events: none;
+          margin-top: -10px;
+          z-index: 2000000000;
+        "
+      ></div>
+      <div style="z-index: 2000000000; position: relative">
+        <iframe
+          title="Desafío de reCAPTCHA"
+          src="./díntico_files/bframe.html"
+          name="c-3pgswja0lwgw"
+          frameborder="0"
+          scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+          style="width: 100%; height: 100%"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
