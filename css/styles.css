@@ -17,6 +17,7 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
+  margin-top: 20vh;
 }
 
 .hero-title {
@@ -28,9 +29,9 @@ body {
   font-size: 2em;
 }
 
-.hero-content-margin {
-  margin-top: 15vh;
-}
+/* .hero-content-margin {
+  margin-top: 1vh;
+} */
 
 .feature-1 {
   background-image: url('/assets/img/seguimiento-pedido-online.jpeg');
@@ -77,21 +78,29 @@ body {
     font-size: 2.5em;
   }
   .hero-subtitle {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
-  .hero-content-margin {
-    margin-top: 5vh;
+  .hero-content {
+    margin-top: 14vh;
+  }
+  .card-title {
+    font-size: 1.8em;
+    text-align: center;
   }
 }
 @media (min-width: 375px) {
   .hero-title {
-    font-size: 3.2em;
+    font-size: 3.5em;
   }
   .hero-subtitle {
     font-size: 1.5em;
   }
-  .hero-content-margin {
-    margin-top: 7vh;
+  .hero-content {
+    margin-top: 10vh;
+  }
+  .card-title {
+    font-size: 2.3em;
+    text-align: center;
   }
 }
 
@@ -100,47 +109,73 @@ body {
     font-size: 4em;
   }
   .hero-subtitle {
-    font-size: 2em;
+    font-size: 1.5em;
   }
-  /* .hero-content-margin {
-    margin-top: 40px;
-  } */
+  .hero-content {
+    margin-top: 15vh;
+  }
+  .card-title {
+    font-size: 3em;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
   .hero-title {
-    font-size: 5em;
+    font-size: 5.5em;
   }
   .hero-subtitle {
-    font-size: 2.2em;
+    font-size: 2em;
   }
-  .hero-content-margin {
-    margin-top: 15vh;
+  .hero-content {
+    margin-top: 20vh;
+  }
+  .card-title {
+    font-size: 2.2em;
+    text-align: start;
   }
 }
 
 @media (min-width: 992px) {
   .hero-title {
-    font-size: 6em;
+    font-size: 7em;
   }
   .hero-subtitle {
-    font-size: 2em;
+    font-size: 3em;
   }
-  .hero-content-margin {
+  .hero-content {
     margin-top: 20vh;
+  }
+  .card-title {
+    font-size: 3em;
+    text-align: start;
   }
 }
 
 @media (min-width: 1200px) {
-  /* .hero-content-margin {
-    margin-top: 120px;
-  } */
+  .hero-title {
+    font-size: 5.7em;
+  }
+  .hero-subtitle {
+    font-size: 2em;
+  }
+  .hero-content {
+    margin-top: 12vh;
+  }
+  .card-title {
+    font-size: 3.5em;
+    text-align: start;
+  }
 }
 
 @media (min-width: 1400px) {
   /* .hero-content-margin {
     margin-top: 150px;
   } */
+  .card-title {
+    font-size: 4.5em;
+    text-align: start;
+  }
 }
 
 .letter-shadow {
@@ -209,10 +244,6 @@ body {
   background-size: cover;
   position: relative;
   height: 70vh;
-}
-
-.que-es-custom {
-  font-size: 4em;
 }
 
 .input-custom {
