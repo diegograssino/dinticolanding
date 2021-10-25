@@ -169,9 +169,9 @@ body {
 }
 
 @media (min-width: 1400px) {
-  /* .hero-content-margin {
-    margin-top: 150px;
-  } */
+  .hero-content-margin {
+    margin-top: 12vh;
+  }
   .card-title {
     font-size: 4.5em;
     text-align: start;
