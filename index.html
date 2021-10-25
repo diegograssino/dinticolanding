@@ -224,7 +224,7 @@
         <div class="hero-content text-white fw-bold">
           <div class="container hero-content-margin">
             <h2 class="hero-title letter-shadow fw-bold header-subtitle-sr">Gestioná tu bar desde donde quieras.</h2>
-            <div class="mt-">
+            <div class="mt-5">
               <h2 class="hero-subtitle letter-shadow lh-base header-title-sr">
                 Creá tu cuenta ahora y obtené un mes de uso completamente gratis. No te pediremos una tarjeta de
                 crédito.
@@ -250,7 +250,7 @@
               <div class="col-md-2"></div>
               <div class="col-md-6 pt-2 pt-lg-5">
                 <div class="card-body">
-                  <h2 class="card-title fw-bold mb-3 mb-md-4">¿Que es díntico?</h2>
+                  <h2 class="card-title fw-bold mb-3 mb-md-4 title-rigth-sr">¿Que es díntico?</h2>
                   <p class="card-text fs-5">
                     Es un sistema de gestión gastronómica que te permite conocer todo lo que ocurre en tu bar desde tu
                     celular, tablet o PC.
@@ -279,7 +279,7 @@
               </div>
               <div class="col-md-2"></div>
               <div class="col-md-4 mt-5">
-                <div class="feature-1 mx-2"></div>
+                <div class="feature-1 mx-2 title-rigth-sr"></div>
               </div>
             </div>
           </div>
@@ -289,7 +289,7 @@
         <div class="container mt-5">
           <div class="card mb-3 border-0">
             <div class="row g-0">
-              <div class="col-md-4 mt-5"><div class="feature-2 mx-2"></div></div>
+              <div class="col-md-4 mt-5"><div class="feature-2 mx-2 title-left-sr"></div></div>
               <div class="col-md-2"></div>
               <div class="col-md-6 pt-5">
                 <div class="card-body">
@@ -318,7 +318,7 @@
               </div>
               <div class="col-md-2"></div>
 
-              <div class="col-md-4 mt-5"><div class="feature-3 mx-2"></div></div>
+              <div class="col-md-4 mt-5"><div class="feature-3 mx-2 title-rigth-sr"></div></div>
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@
         <div class="container my-5">
           <div class="card mb-3 border-0">
             <div class="row g-0">
-              <div class="col-md-4 mt-5"><div class="feature-4 mx-2"></div></div>
+              <div class="col-md-4 mt-5"><div class="feature-4 mx-2 title-left-sr"></div></div>
               <div class="col-md-2"></div>
               <div class="col-md-6 pt-5">
                 <div class="card-body">
@@ -589,6 +589,16 @@
         duration: 1000,
         origin: 'bottom',
         delay: 250,
+      });
+      sr.reveal('.title-rigth-sr', {
+        duration: 1000,
+        origin: 'rigth',
+        distance: '50px',
+      });
+      sr.reveal('.title-left-sr', {
+        duration: 1000,
+        origin: 'left',
+        distance: '50px',
       });
     </script>
   </body>
